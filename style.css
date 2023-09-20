@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.header{
+    text-align: center;
+}
+
+.gopal{
+    font-size: 70px;
+    text-align: start;
+    justify-content: flex-start;
+  
+    margin-top: 2rem;
+    color: transparent;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #fff;
+    background: url(/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+ .Singh{
+    font-size: 70px;
+    text-align: end;
+  
+    margin-top: 3rem;
+    color: transparent;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #fff;
+    background: url(/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    background-color: #db7114cd;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+}
+
+@media (min-width:368px) {
+    .wrapper {
+        height: 45rem;
+        width: 23rem;
+        border-radius: 40px;
+        border: 8px solid #2e2e2e;
+    }
+}
+
+.wrapper .screen {
+    min-width: 100%;
+    flex: 1;
+    transition: all 0.3s;
+}
+
+.screen-backdrop {
+    width: 135%;
+    height: 45rem;
+    position: absolute;
+    top: 0;
+    background-color: #c16c3e;
+    z-index: -1;
+    transition: all 0.3s;
+}
+header {
+    font-size: 1.5rem;
+}
+
+header, 
+form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    
+        padding: 0.9rem;
+        min-width: 80%;
+        padding-left: .5rem;
+        font-size: 1.2rem;
+        border: none;
+        background: white;
+        border-radius: .8rem;
+    
+}
+
+form button {
+    padding: 0.9rem;
+    
+    /* padding-left: .5rem; */
+    font-size: .8rem;
+    border: none;
+    background: white;
+    border-radius: .8rem;
+}
+
+form button {
+    color: rgb(98, 72, 14);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;
+}
+
+form button:hover {
+    color: white;
+    background: rgb(44, 226, 24);
+}
+
+.fa-plus-circle {
+   
+    margin-left: -8px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todo-list {
+    min-width: 100%;
+    list-style: none;
+    
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+    
+}
+
+.todo li {
+    flex: 1;
+    
+}
+
+.trash-btn, 
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+
+.complete-btn {
+    background: rgb(97, 228, 16);
+}
+
+.trash-btn {
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    background: rgb(221, 7, 7);
+    
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+
+
+
+
+
